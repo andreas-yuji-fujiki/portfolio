@@ -9,6 +9,7 @@ import ProjectsSection from './Components/ProjectsSection/ProjectsSection'
 import Footer from './Components/Footer/Footer'
 
 import Span from './Components/Span/Span'
+import Button from './Components/Button/Button'
 import ButtonLink from './Components/ButtonLink/ButtonLink'
 import List from './Components/List/List'
 
@@ -74,19 +75,19 @@ const App = () => {
                       />
                   </li>
                   <li>
-                    <ButtonLink  
-                        type='iconPrimary'
-                        link='#'
-                        target='_blank'
-                        content={
-                          <>
-                          <div className="tooltip">
-                            <FaFileDownload/>
-                            <span className="tooltip-text">download resume</span>
-                          </div>
-                          </>
-                        }
-                      />
+                    <a href="/download/resume.pdf" download="resume.pdf">
+                      <Button
+                          type='iconPrimary'
+                          content={
+                            <>
+                                <div className="tooltip">
+                                  <FaFileDownload/>
+                                  <span className="tooltip-text">download resume</span>
+                                </div>
+                            </>
+                          }
+                        />
+                    </a>
                   </li>
                 </List>
             </div>
