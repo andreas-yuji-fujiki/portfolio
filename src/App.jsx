@@ -75,7 +75,7 @@ const App = () => {
                       />
                   </li>
                   <li>
-                    <a href="/download/resume.pdf" download="resume.pdf">
+                    <a href="download/resume.pdf" download="resume.pdf">
                       <Button
                           type='iconPrimary'
                           content={
