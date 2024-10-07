@@ -1,6 +1,6 @@
 import './App.css'
 
-// components:
+// components:   
 import Header from './Components/Header/Header'
 import Section from './Components/Section/Section'
 import SkillsCard from './Components/SkillsCard/SkillsCard'
