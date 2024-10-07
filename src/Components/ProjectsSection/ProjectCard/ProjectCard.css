@@ -1,0 +1,354 @@
+/* general */
+button.nodeploy{
+    display: none;
+}
+.projectCard{
+    min-width: 27.5vw;
+    max-width: 27.5vw;
+}
+.projectCard ul{
+    justify-content: center;
+    background-color: #701ea6b4;
+}
+
+.projectCard .forMobileSpan{
+    opacity: 0.5;
+    display: none;
+}
+.projectCard .forDesktopSpan{
+    opacity: 0.5;
+    display: inline-block;
+}
+
+
+/* header */
+.projectHeader{
+    padding: 25px 35px 15px 35px;
+    background-color: #1f1f1f;
+    border-bottom: none;
+}
+.projectTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+.projectHeader svg path{
+    fill: #962fb6;
+}
+.projectHeader svg{
+    font-size: 22px;
+}
+.projectHeader .projectDescription{
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.projectUsedLanguagesContainer{
+    display: none;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+}
+.projectUsedLanguagesContainer ul{
+    gap: 0;
+}
+.projectUsedLanguagesContainer button{
+    cursor: default;
+}
+
+
+
+/* project image & link buttons*/
+.desktopProjectImage{
+    border-top: none;
+}
+.desktopProjectImage img{
+    min-width: 27.5vw;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    border-top: none;
+    border-bottom: none;
+}
+.projectLinksContainer{
+    display: none;
+
+    position: relative;
+    z-index: 1;
+
+    margin-top: -64px;
+}
+.projectLinksContainer ul{
+    gap: 18px;
+    padding: 10px 0;
+
+    background-color: #1f1f1f;
+    border-top: none;
+}
+.projectLinksContainer button{
+    border-radius: 4px;
+    font-size: 16px;
+    opacity: 1;
+    padding: 10px 25px;
+}
+.projectLinksContainer button:hover{
+    margin-top: -2px;
+    opacity: 1;
+}
+
+
+/* hover effects*/
+.projectCard:hover .projectHeader svg{
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(-50deg);
+}
+
+.projectCard:hover .projectLinksContainer, 
+.projectCard:hover .projectUsedLanguagesContainer {
+    display: block;
+    animation: transitionOpacity 1.5s forwards;
+    transition: all 0.3s ease-in-out;
+}
+.projectCard:hover {
+    max-height: none;
+}
+
+.projectCard:hover .desktopProjectImage img{
+    margin-top: -47px;
+}
+
+
+
+/* animation used to show hidden elements */
+@keyframes transitionOpacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+/* project types */
+.projectType{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.55;
+    padding: 2px 12px;
+
+    color: #fff;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+
+
+.freelance img{
+    border-bottom: 5px solid #ff00aa;
+}
+.freelance .projectType{
+    background-color: #ff00aa;
+}
+.freelance .projectHeader svg path{
+    fill: #ff00aa;
+}
+.freelance .projectUsedLanguagesContainer ul,
+.freelance .projectLinksContainer button{
+    background-color: #ff00aaad;
+}
+
+
+
+.open-source img{
+    border-bottom: 5px solid #5eff00d0;
+}
+.open-source .projectType{
+    background-color: #5eff00d0;
+}
+.open-source .projectHeader svg path{
+    fill: #5eff00d0;
+}
+.open-source .projectUsedLanguagesContainer ul,
+.open-source .projectLinksContainer button{
+    background-color: #3b8311;
+}
+
+
+
+.personal-project img{
+    border-bottom: 5px solid #04a7a7;
+}
+.personal-project .projectType{
+    background-color: #04a7a7;
+}
+.personal-project,
+.personal-project .projectUsedLanguagesContainer ul,
+.personal-project .projectLinksContainer button{
+    background-color: #04a7a7;
+}
+.personal-project .projectHeader svg path{
+    fill: #04a7a7;
+}
+
+
+
+.pratice img{
+    border-bottom: 5px solid #962fb6;
+}
+.pratice .projectType{
+    background-color: #962fb6;
+}
+.pratice .projectUsedLanguagesContainer ul,
+.pratice .projectLinksContainer button{
+    background-color: #962fb6;
+}
+.pratice .projectHeader svg path{
+    fill: #962fb6;
+}
+
+
+
+.building{
+    opacity: 0.6;
+}
+.building img{
+    border-bottom: 5px solid #ff8800d3;
+}
+.building .projectType{
+    background-color: #ff8800d3;
+}
+.building button{
+    opacity: 0.6;
+    background-color: #ff8800d3;
+}
+.building .projectUsedLanguagesContainer ul{
+    opacity: 0.6;
+    background-color: #ff8800d3;
+}
+.building .projectHeader svg path{
+    fill: #ff8800d3;
+}
+.building:hover .projectTitleContainer{
+    margin-bottom: 10px;
+}
+
+
+
+/* responsivity
+*/
+@media (max-width: 1630px){
+    .projectCard h3, .projectCard p{
+        font-size: 1.4vw;
+    }
+}
+@media (max-width: 1390px){
+    .projectCard h3, .projectCard p{
+        font-size: 1.2vw;
+    }
+}
+@media (max-width: 1280px){
+    .projectCard{
+        min-width: 43vw;
+        max-width: 43vw;
+    }
+    .projectCard h3, .projectCard p{
+        font-size: 1.8vw;
+    }
+}
+@media (max-width: 840px){
+    .projectCard .forMobileSpan{
+        display: inline-block;
+    }
+    .projectCard .forMobileSpan svg{
+        transform: rotate(31deg);
+    }
+    .projectCard:hover .projectHeader svg{
+        transform: rotate(-2deg)
+    }
+    .projectCard .forDesktopSpan{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .projectCard {
+        min-width: 80vw;
+        max-width: 80vw;
+    }
+    .projectCard h3{
+        font-size: 3vw;
+    }
+    .projectTitleContainer{
+        margin-bottom: 5px;
+    }
+    .projectCard p{
+        font-size: 2.3vw;
+    }
+    .projectCard:hover {
+        max-height: none;
+    }
+}
+@media (max-width: 530px){
+    .projectCard h3{
+        font-size: 3.5vw;
+    }
+    .projectCard p{
+        font-size: 3vw;
+    }
+}
+@media (max-width: 440px){
+    .projectCard h3{
+        font-size: 3.5vw;
+    }
+    .projectCard p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 400px){
+    .projectCard:hover .desktopProjectImage img{
+        margin-top: -30px;
+    }
+    .projectUsedLanguagesContainer button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 20px 7px 20px;
+        font-size: 17px;
+    }
+    .projectLinksContainer{
+        margin-top: -40px;
+    }
+    .projectLinksContainer ul{
+        padding: 5px 0 3px 0;
+    }
+    .projectLinksContainer button{
+        font-size: 16px;
+        padding: 7px 25px;
+    }
+}
+@media (max-width: 390px){
+    .projectTitleContainer{
+        margin-bottom: 5px;
+    }
+    .building:hover .projectTitleContainer{
+        margin-bottom: 5px;
+    }
+    .projectCard .projectUsedLanguagesContainer{
+        margin-top: -5px;
+    }
+    .projectCard p{
+        font-size: 14px;
+    }
+    .projectHeader svg{
+        width: 17px;
+    }
+}
+@media (max-width: 320px){
+    .projectCard p{
+        font-size: 12px;
+    }
+}

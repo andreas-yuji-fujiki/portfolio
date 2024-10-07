@@ -1,0 +1,20 @@
+.AboutSection{
+    padding: 0;
+
+    gap: 0 2vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+}
+/* responsive */
+@media (max-width: 1280px){
+    .AboutSection{
+        margin-top: 0px;
+        flex-wrap: wrap;
+        gap: 2.5vw;
+    }
+}
+@media (max-width: 768px){
+    .AboutSection{
+        gap: 50px;
+    }
+}

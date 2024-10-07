@@ -1,0 +1,17 @@
+.social-links-container button:hover .tooltip-text {
+    visibility: visible;
+    width: 140px;
+    margin-left: -300%;
+    bottom: -130%;
+    opacity: 1;
+}
+@media (max-width: 555px){
+    .social-links-container button:hover .tooltip-text {
+        margin-left: -220%;
+    }
+}
+@media (max-width: 490px){
+    .social-links-container button:hover .tooltip-text {
+        visibility: hidden;
+    }
+}

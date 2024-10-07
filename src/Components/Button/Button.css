@@ -1,0 +1,37 @@
+/* normal buttons*/
+.primary{
+    background-color: #962fb6;
+}
+.secondary{
+    background-color: #861ecc88;
+}
+
+/* icon buttons*/
+.iconPrimary{
+    background-color: #962fb6;
+    font-size: 20px;
+}
+
+.iconSecondary{
+    font-size: 20px;
+    background-color: #861ecc88;
+}
+.iconPrimary:hover, .iconSecondary:hover{
+    margin-top: -7px;
+}
+.projectCardUsedLanguage{
+    padding: 10px 22.5px;
+    
+    font-size: 22px;
+    border-radius: 0;
+}
+.contactButton{
+    font-size: 25px;
+    background-color: #551e7b;
+    border-radius: 0;
+    padding: 12px 40px;
+}
+.contactButton:hover{
+    padding: 10px 40px;
+    border: 2px solid #212223;
+}

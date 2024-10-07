@@ -1,0 +1,205 @@
+/* Cards Traffic Light*/
+.aboutCard-traffic-light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+
+    width: 7vw;
+    height: 4vh;
+    padding: 0.5vw;
+    
+    position: absolute;
+    margin: -15px 0 0 -10px;
+
+    background-color: #272727;
+    border: 1px solid #972fb6af;
+}
+.aboutCard-traffic-light-circle{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100%;
+}
+.aboutCard-traffic-light-circle.one{
+    background-color: #620b8d;
+    
+}
+.aboutCard-traffic-light-circle.two{
+    background-color: #7851A9;
+}
+.aboutCard-traffic-light-circle.three{
+    background-color: #69359C;
+}
+/* Cards */
+.aboutCard{
+    width: 20vw;
+    min-height: 27vw;
+    max-height: 27vw;
+
+    font-size: 1.2vw;
+    text-align: center;
+
+    border: 1px solid;
+    background-color: #1f1f1f;
+}
+.aboutCard ul{
+    min-height: 27vw;
+    max-height: 27vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2vw;
+}
+.aboutCard li{
+    opacity: 0.77;
+    width: 100%;
+    border: 1px solid #620b8d9c;
+    padding: 1vw;
+}
+.aboutCard li:first-child{
+    margin-top: 2vw;
+}
+.aboutCard li:last-child{
+    margin-bottom: 2vw;
+}
+.primaryCard{
+    border-color: #972fb6e3;
+}
+.secondaryCard{
+    border-color: #643b81;
+}
+
+
+/* responsive */
+@media (max-width: 1280px){
+    .aboutCard br{
+        display: none;
+    }
+    .aboutCard, .aboutCard ul{
+        font-size: 22px;
+        
+        width: 42vw;
+        min-height: 37vw;
+        max-height: 37vw;
+    }
+    .aboutCard li{
+        padding: 1vw 9vw;
+        margin: 20px 0;
+    }
+}
+@media (max-width: 1150px){
+    .aboutCard-traffic-light{
+        width: 80px;
+        height: 30px;
+        gap: 10px;
+    }
+    .aboutCard-traffic-light-circle{
+        width: 10px;
+        height: 10px;
+    }
+    .aboutCard ul{
+        font-size: 19px;
+        padding: 3vw 0;
+    }
+    .aboutCard li{
+        padding: 2.5vh 4vw;
+        margin: 1.4vw 0;
+    }
+    .aboutCard .secondaryCard{
+        display: none;
+    }
+}
+@media(max-width: 915px){
+    .aboutCard br{
+        display: inline-block;
+    }
+    .aboutCard li:first-child{
+        border-top: none;
+    }
+    .aboutCard li:last-child{
+        border-bottom: none;
+    }
+}
+@media(max-width: 890px){
+    .aboutCard, .aboutCard ul{
+        min-height: 47vw;
+        max-height: 47vw;
+    }
+    .aboutCard ul{
+        font-size: 17px;
+    }
+}
+@media(max-width: 800px){
+    .aboutCard, .aboutCard ul{
+        min-height: 50vw;
+        max-height: 50vw;
+    }
+}
+@media (max-width: 768px){
+    .aboutCard br{
+        display: none;
+    }
+    .aboutCard, .aboutCard ul{
+        font-size: 22px;
+        width: 80vw;
+        min-height: 52vw;
+        max-height: 52vw;
+    }
+    .aboutCard li{
+        opacity: 0.65;
+        padding: 5vw;
+        border: 1px solid #620b8d9c;
+        margin: 0;
+    }
+    .aboutCard li:first-child{
+        border-top: 1px solid #620b8d9c;
+    }
+    .aboutCard li:last-child{
+        padding-bottom: 5vw;
+        border: 1px solid #620b8d9c;
+    }
+}
+@media (max-width: 750px){
+    .aboutCard ul{
+        font-size: 18px;
+    }
+}
+@media (max-width: 579px){
+    .aboutCard, .aboutCard ul{
+        min-height: 62vw;
+        max-height: 62vw;
+        font-size: 17px;
+    }
+}
+@media (max-width: 470px){
+    .aboutCard br{
+        display: inline-block;
+    }
+    .aboutCard, .aboutCard ul{
+        min-height: 75vw;
+        max-height: 75vw;
+    }
+}
+@media (max-width: 428px){
+    .aboutCard li{
+        padding: 5vw 7vw;
+    }
+}
+@media (max-width: 400px){
+    .aboutCard, .aboutCard ul{
+        font-size: 18px;
+        min-height: 80vw;
+        max-height: 80vw;
+    }
+}
+@media (max-width: 370px){
+    .aboutCard, .aboutCard ul{
+        font-size: 16px;
+    }
+}
+@media (max-width: 344px){
+    .aboutCard, .aboutCard ul{
+        font-size: 14px;
+    }
+}

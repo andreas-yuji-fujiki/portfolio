@@ -1,0 +1,156 @@
+/* general
+*/
+.forMobileSpan{
+  display: none;
+}
+
+.skills-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px 0;
+  font-size: 25px;
+
+  background-color: #1f1f1f;
+}
+.skills-card h3{
+  opacity: 0.5;
+}
+.skills-card ul, 
+.skills-card li {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.skills-card *{
+  opacity: 0.90;
+}
+.skills-card svg:hover{
+  transform: scale(1.5);
+  
+  opacity: 1;
+  fill: #962fb6;
+}
+.skills-card ul{
+  padding: 0 55px;
+}
+
+
+/* Language hover text
+*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 5%;
+  margin-left: -45px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 14px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* responsivity
+*/
+@media (max-width: 800px){
+  .skills-card *{
+    font-size: 18px;
+  }
+  .forDesktopSpan{
+    display: none;
+  }
+  .forMobileSpan{
+    display: inline-block;
+  }
+}
+@media (max-width: 710px){
+  .skills-card{
+    padding: 20px 0;
+  }
+  .skills-card svg{
+    margin: 0 19px;
+  }
+}
+@media (max-width: 666px){
+  .skills-card h3{
+    margin-bottom: 25px;
+  }
+  .skills-card svg{
+    margin: 0 18px;
+  }
+}
+@media (max-width: 620px){
+  .skills-card *{
+    margin: 0 5px;
+  }
+}
+@media (max-width: 575px){
+  .skills-card *{
+    margin: 0 4px;
+  }
+}
+@media (max-width: 528px){
+  .skills-card *{
+    margin: 0 3px;
+  }
+}
+@media (max-width: 482px){
+  .skills-card *{
+    margin: 0 2px;
+  }
+}
+@media (max-width: 466px){
+  .skills-card svg{
+    margin: 0 15px;
+  }
+}
+@media (max-width: 442px){
+  .skills-card svg{
+    margin: 0 14px;
+  }
+}
+@media (max-width: 434px){
+  .skills-card svg{
+    margin: 0 8px;
+  }
+  .skills-card ul{
+    padding: 0 55px;
+  }
+}
+@media (max-width: 386px){
+  .skills-card svg{
+    margin: 0 4px;
+  }
+  .skills-card ul{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 324px){
+  .skills-card svg{
+    margin: 0 3px;
+  }
+  .skills-card ul{
+    padding: 0 20px;
+  }
+}

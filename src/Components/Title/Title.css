@@ -1,0 +1,94 @@
+.typeWriter{
+    font-size: 45px;
+    min-height: 55px;
+    
+    overflow: hidden;
+    border-right: .15em solid #962fb6;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 2s steps(17, end),
+        blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 105% }
+  }
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #962fb6; }
+}
+
+
+
+.SectionTitle{
+    width: 87.3%;
+    text-align: left;
+    text-transform: lowercase;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    padding: 70px 0;
+    letter-spacing: 1.5px;
+    opacity: 0.5;
+    margin: 0 auto;
+}
+.SectionTitle .title-decoration-span{
+    flex: 1;
+    border-top: 1px solid #b237d8;
+}
+.SkillsCardTitle {
+    font-size: 17px;
+    margin: -10px 0 22px 0;
+    text-transform: lowercase;
+}
+
+
+
+.SecondaryTitle{
+    font-size: 30px;
+    width: 100%;
+    padding: 10px 20px;
+
+    font-weight: 900;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.highlited{
+    font-size: 20px;
+    padding: 8px 20px;
+    background-color: #00000060;
+}
+
+
+
+/* responsivity
+*/
+@media (max-width: 800px){
+    .SectionTitle{
+        padding: 60px 0;
+    }
+}
+@media (max-width: 520px){
+    .typeWriter{
+        font-size: 39px;
+    }
+    .highlited{
+        font-size: 17.85px;
+    }
+}
+@media (max-width: 440px){
+    .SectionTitle{
+        padding: 50px 0;
+    }
+}

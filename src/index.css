@@ -1,0 +1,39 @@
+/* General Styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html{
+  overflow-x: hidden;
+}
+body{
+  font-family: Helvetica, sans-serif;
+  background-color: #282c33;
+}
+a{
+  text-decoration: none;
+}
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  font-size: 13.5px;
+  font-weight: 900;
+  text-transform: lowercase;
+  letter-spacing: 0.45px;
+
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+ul, ol{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+p{
+  font-size: 20px;
+}

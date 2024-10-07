@@ -1,0 +1,8 @@
+/* Directions */
+.vertical{
+    flex-direction: column;
+    list-style: none !important;
+}
+.horizontal{
+    flex-direction: row;
+}
