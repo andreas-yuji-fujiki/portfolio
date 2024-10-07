@@ -13,6 +13,7 @@ import { FaLinux } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaNodeJs } from "react-icons/fa";
 
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -52,13 +53,10 @@ const ProjectsSection = () => {
                     usedLanguages={
                         <>
                             <li>
-                                <Button type='projectCardUsedLanguage' content={<FaHtml5/>} />
-                            </li>
-                            <li>
-                                <Button type='projectCardUsedLanguage' content={<FaCss3Alt/>} />
-                            </li>
-                            <li>
                                 <Button type='projectCardUsedLanguage' content={<IoLogoJavascript/>} />
+                            </li>
+                            <li>
+                                <Button type='projectCardUsedLanguage' content={<FaNodeJs/>} />
                             </li>
                         </>
                     }

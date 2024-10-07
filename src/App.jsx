@@ -1,6 +1,6 @@
 import './App.css'
 
-// components:    
+// components:
 import Header from './Components/Header/Header'
 import Section from './Components/Section/Section'
 import SkillsCard from './Components/SkillsCard/SkillsCard'
@@ -31,19 +31,14 @@ const App = () => {
         id="welcome-section"
 
         imageOrder="imageFirst"
-
         imagePath="images/spaceship.png"
-
         imageDescription="A pixel art of a spaceship with a purple background!" 
 
         titleType="typeWriter"
-
         titleId="skills"
-        
         titleContent="I'm Andreas Yuji." 
 
         secondTitleType="highlited"
-
         secondTitleContent={
           <>
             17 years old <Span content="Frontend React" /> developer!
