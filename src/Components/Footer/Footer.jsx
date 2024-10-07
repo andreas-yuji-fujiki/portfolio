@@ -97,7 +97,7 @@ function Footer() {
                         {copiedInfo}
                     </p>
                     <p id="downloadResume">
-                        You can also <a href="#">download my resume <FaFileDownload/></a>
+                        You can also <a href="download/resume.pdf" download="resume.pdf">download my resume <FaFileDownload/></a>
                     </p>
                 </div>
             </section>
