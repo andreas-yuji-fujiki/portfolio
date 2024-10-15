@@ -41,7 +41,7 @@ const ProjectsSection = () => {
             <div className="projects-container">
 {/* InsightBox */}
             <ProjectCard 
-                    projectTitle="InsightBox"
+                    projectTitle="💬 InsightBox"
                     projectType='freelance'
 
                     desktopProjectImagePath="images/project-images/insightbox.png"
