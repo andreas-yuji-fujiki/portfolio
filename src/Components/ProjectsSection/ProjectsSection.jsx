@@ -14,7 +14,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
-
+import { FaDatabase } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 
@@ -39,6 +39,34 @@ const ProjectsSection = () => {
                 </>
             }/>
             <div className="projects-container">
+{/* Insight Box */}
+            <ProjectCard 
+                    projectTitle="Insight Box"
+                    projectType='freelance'
+
+                    desktopProjectImagePath="images/project-images/insightbox.png"
+                    desktopProjectImageDescription="InsightBox project illustration."
+
+                    deployLink="https://code.com.br/p/insightbox"
+                    repositoryLink="nocodelink"
+
+                    usedLanguages={
+                        <>
+                            <li>
+                                <Button type='projectCardUsedLanguage' content={<FaDatabase/>} />
+                            </li>
+                            <li>
+                                <Button type='projectCardUsedLanguage' content={<IoLogoJavascript/>} />
+                            </li>
+                            <li>
+                                <Button type='projectCardUsedLanguage' content={<FaCss3Alt/>} />
+                            </li>
+                            <li>
+                                <Button type='projectCardUsedLanguage' content={<FaHtml5/>} />
+                            </li>
+                        </>
+                    }
+                />
 {/* Discord bot structure */}
                 <ProjectCard 
                     projectTitle="Discord bot structure"
