@@ -39,16 +39,16 @@ const ProjectsSection = () => {
                 </>
             }/>
             <div className="projects-container">
-{/* Insight Box */}
+{/* InsightBox */}
             <ProjectCard 
-                    projectTitle="Insight Box"
+                    projectTitle="InsightBox"
                     projectType='freelance'
 
                     desktopProjectImagePath="images/project-images/insightbox.png"
                     desktopProjectImageDescription="InsightBox project illustration."
 
                     deployLink="https://code.com.br/p/insightbox"
-                    repositoryLink="nocodelink"
+                    repositoryLink="https://github.com/andreas-yuji-fujiki/insight-box"
 
                     usedLanguages={
                         <>
